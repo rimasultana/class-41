@@ -1,11 +1,11 @@
-const letters = new Set();
+const letters = new Set(["a","b","c"]);
 
-letters.add("a");
-letters.add("b");
-letters.add("c");
+let text = "";
+
+letters.forEach(function(value) {
+    text += value;
+})
 
 
 
-
-
-console.log(letters.size);
+console.log(text);
